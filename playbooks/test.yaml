@@ -1,0 +1,12 @@
+# playbook.yml
+- name: Callback plugin test
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Echo something
+      command: echo "Hello from Ansible"
+
+    - name: Another task
+      debug:
+        msg: "This is a debug message"
